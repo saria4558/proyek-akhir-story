@@ -1,7 +1,7 @@
 {
-  "name": "citycareapp",
+  "name": "storyapp",
   "version": "1.0.0",
-  "description": "Aplikasi pelaporan kerusakan fasilitas umum yang memungkinkan warga Indonesia melaporkan masalah secara langsung kepada pemerintah kota. Dengan aplikasi ini, komunikasi antara warga dan pemerintah menjadi lebih efisien dalam menangani dan menindaklanjuti laporan kerusakan fasilitas umum.",
+  "description": "StoryApp adalah aplikasi berbagi cerita yang memungkinkan siapa saja untuk membagikan momen, pengalaman, dan inspirasi kepada dunia. Melalui StoryApp, pengguna dapat menjelajahi beragam kisah menarik dari orang lain, menyimpan cerita favorit ke dalam daftar khusus, serta menghapusnya kapan saja sesuai keinginan. Dengan antarmuka yang sederhana dan interaktif, StoryApp menjadi ruang terbuka untuk saling terhubung melalui cerita.",
   "scripts": {
     "build": "webpack --config ./webpack.prod.js",
     "start-dev": "webpack serve --config ./webpack.dev.js",
