@@ -1,10 +1,10 @@
 {
     "id": "/#/",
-    "start_url": "/#/",
-    "scope": "/",
+    "start_url": "/proyek-akhir-story/",
+    "scope": "/proyek-akhir-story/",
     "name": "Story App",
     "short_name": "StoryApp",
-    "description": "AStoryApp adalah aplikasi berbagi cerita yang memungkinkan siapa saja untuk membagikan momen, pengalaman, dan inspirasi kepada dunia. Melalui StoryApp, pengguna dapat menjelajahi beragam kisah menarik dari orang lain, menyimpan cerita favorit ke dalam daftar khusus, serta menghapusnya kapan saja sesuai keinginan. Dengan antarmuka yang sederhana dan interaktif, StoryApp menjadi ruang terbuka untuk saling terhubung melalui cerita.",
+    "description": "StoryApp adalah aplikasi berbagi cerita yang memungkinkan siapa saja untuk membagikan momen, pengalaman, dan inspirasi kepada dunia. Melalui StoryApp, pengguna dapat menjelajahi beragam kisah menarik dari orang lain, menyimpan cerita favorit ke dalam daftar khusus, serta menghapusnya kapan saja sesuai keinginan. Dengan antarmuka yang sederhana dan interaktif, StoryApp menjadi ruang terbuka untuk saling terhubung melalui cerita.",
     "display": "standalone",
     "background_color": "#FFFFFF",
     "theme_color": "#154558",
