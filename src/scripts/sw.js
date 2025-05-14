@@ -1,8 +1,9 @@
 import { precacheAndRoute } from 'workbox-precaching';
 import { registerRoute } from 'workbox-routing';
 import { CacheableResponsePlugin } from 'workbox-cacheable-response';
-import { NetworkFirst, CacheFirst, StaleWhileRevalidate } from 'workbox-strategies';
+import { NetworkOnly, NetworkFirst, CacheFirst, StaleWhileRevalidate } from 'workbox-strategies';
 import { BASE_URL } from './config';
+import { BackgroundSyncPlugin } from 'workbox-background-sync';
 
  
 // Do precaching
@@ -64,6 +65,19 @@ registerRoute(
   new CacheFirst({
     cacheName: 'maptiler-api',
   }),
+);
+const bgSyncPlugin = new BackgroundSyncPlugin('formQueue', {
+  maxRetentionTime: 24 * 60, // simpan request hingga 24 jam
+});
+registerRoute(
+  ({ url, request }) => {
+    const baseUrl = new URL(BASE_URL);
+    return request.method === 'POST' && url.origin === baseUrl.origin && url.pathname.startsWith('/reports');
+  },
+  new NetworkOnly({
+    plugins: [bgSyncPlugin],
+  }),
+  'POST'
 );
 self.addEventListener('push', (event) => {
   console.log('[Service worker] pushing...');
